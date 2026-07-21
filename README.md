@@ -1,1 +1,0 @@
-# swagger-life-diving-backend
