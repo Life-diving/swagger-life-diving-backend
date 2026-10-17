@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Swagger UI</title>
-    <link href="https://cdn.jsdelivr.net/npm/swagger-ui-dist/swagger-ui.css" rel="stylesheet">
+    <!-- Pinned version + SRI: the browser refuses a file that differs from the published npm package. -->
+    <link href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.33.1/swagger-ui.css" rel="stylesheet"
+          integrity="sha384-Ov4/wv3j2bmct8cDc5X4ngJZohVPzEmc6uDPH8WeljUxO5vtoykvMEfbu9Vh6RaW" crossorigin="anonymous">
 </head>
 <body>
 <div id="swagger-ui"></div>
-<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist/swagger-ui-bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.33.1/swagger-ui-bundle.js"
+        integrity="sha384-ZPehFMQommnnuaZ4rpxgkgTT2DKFVp4hZC/7pLit+9Lek9T1YGSo23eHFbvNkXkw" crossorigin="anonymous"></script>
 <script>
 const ui = SwaggerUIBundle({
         url: 'https://b6sjtcal72.execute-api.eu-central-1.amazonaws.com/dev/api-docs',
@@ -14,3 +19,4 @@ const ui = SwaggerUIBundle({
     });
 </script>
 </body>
+</html>
